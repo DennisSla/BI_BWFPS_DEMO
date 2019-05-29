@@ -1,0 +1,1164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+-<Composite:compositeView xmlns:adtcore="http://www.sap.com/adt/core" xmlns:View="http://www.sap.com/ndb/ViewModelView.ecore" xmlns:Type="http://www.sap.com/ndb/DataModelType.ecore" xmlns:BwCore="http://www.sap.com/bw/modeling/BwCore.ecore" xmlns:Column="http://www.sap.com/ndb/DataModelFilter.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Composite="http://www.sap.com/bw/modeling/CompositeModel.ecore" mproCompatibilityMode="false" visibleAuditCharacteristics="false" additionalGroupingBeforeJoin="false" leftOuterOnCondition="false" temporalJoin="false" stackable="false" defaultNode="#///U1" clientDependent="false" fieldNamePrefix="4VDSVDISP1" withHanaModel="true" readOnly="true" physicalSchemaName="SAPHANADB" name="VDSVDISP1" schemaVersion="1.14">
+
+<endUserTexts label="Disposition (InfoObject)"/>
+
+
+-<viewNode name="U1" xsi:type="View:Union">
+
+
+-<element name="ABRUF_ID" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="CHAR" semanticType="empty" length="28"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="ABRUF_ID"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="DISPO_ID" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="NUMC" semanticType="empty" length="19"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="DispositionsID"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="DISPO_OBJEKT" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="CHAR" semanticType="empty" length="19"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="DispositionsobjektID"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="ZAEHLER_V" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="NUMC" semanticType="empty" length="2"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Zähler (Vervielfachung)"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="DISPO_TYP" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="CHAR" semanticType="empty" length="40"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Dispositionstyp"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="REGIEFAHRT" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="NUMC" semanticType="empty" length="1"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Regiefahrt"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="DISPO_STATUS" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="NUMC" semanticType="empty" length="2"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Dispositionsstatus"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="RUECKNAHMETY" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="NUMC" semanticType="empty" length="2"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="RUECKNAHMETYP"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="SERIE_ELEM_B" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="DATS" semanticType="date" length="8"/>
+
+<fixedUnit intValue="TAG">TAG</fixedUnit>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Serienelemet: Beginn"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="SERIE_ELEM_E" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="DATS" semanticType="date" length="8"/>
+
+<fixedUnit intValue="TAG">TAG</fixedUnit>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Serienelement: Ende"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="MAT_ID" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="CHAR" semanticType="empty" length="40"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Matrial (DSW)"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="CHAUFFEUR_ID" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="NUMC" semanticType="empty" length="5"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Chauffeur"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="AUSLEIHNUMME" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="CHAR" semanticType="empty" length="20"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Ausleihnummer"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="FREMDANM_ID" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="NUMC" semanticType="empty" length="19"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="FremdanmietungsID"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="UEBERGABEZEI" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="DATS" semanticType="date" length="8"/>
+
+<fixedUnit intValue="TAG">TAG</fixedUnit>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Ausgabezeitpunkt"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="RUECKNAHMEZE" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="DATS" semanticType="date" length="8"/>
+
+<fixedUnit intValue="TAG">TAG</fixedUnit>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Rüknahmezeitpunkt"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="NICHTABHOLUN" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="NUMC" semanticType="empty" length="1"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Nichtabholung"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="VORZ_BER_STO" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="DATS" semanticType="date" length="8"/>
+
+<fixedUnit intValue="TAG">TAG</fixedUnit>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Votzeitiger Berechnungsstop"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="DISPO_VON" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="DATS" semanticType="date" length="8"/>
+
+<fixedUnit intValue="TAG">TAG</fixedUnit>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Disposition: Beginn"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="DISPO_BIS" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="DATS" semanticType="date" length="8"/>
+
+<fixedUnit intValue="TAG">TAG</fixedUnit>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Disposion: Ende"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="STATUS_DATUM" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="DATS" semanticType="date" length="8"/>
+
+<fixedUnit intValue="TAG">TAG</fixedUnit>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Zeitstempel 1"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="DBNUMMER" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" associationLastChanged="2019-02-28T09:43:37Z" conversionRoutine="ALPHA" infoObjectName="CFZG00">
+
+<endUserTexts label="Fahrzeug"/>
+
+<inlineType name="CHAR" semanticType="empty" length="10" globalElementName="CFZG00"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="DB Nummer"/>
+
+</localProperties>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGVLC00" infoObjectType="CHA">
+
+<descriptions label="Fahrzeug Vehicle"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGTCH00" infoObjectType="CHA">
+
+<descriptions label="Fahrzeug Technik"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW111" infoObjectType="CHA">
+
+<descriptions label="Hersteller"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW112" infoObjectType="CHA">
+
+<descriptions label="Modellreihe"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW221" infoObjectType="CHA">
+
+<descriptions label="Warengruppe"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW100" infoObjectType="CHA">
+
+<descriptions label="Gültig ab"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW101" infoObjectType="CHA">
+
+<descriptions label="Gültig bis"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW105" infoObjectType="CHA">
+
+<descriptions label="Technische Fahrzeugklasse"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW107" infoObjectType="CHA">
+
+<descriptions label="Verkaufsdatum"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW109" infoObjectType="CHA">
+
+<descriptions label="Fahrzeuggruppe"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW117" infoObjectType="CHA">
+
+<descriptions label="Aufbau"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW118" infoObjectType="CHA">
+
+<descriptions label="Bauart"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW119" infoObjectType="CHA">
+
+<descriptions label="Antriebsart"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW124" infoObjectType="CHA">
+
+<descriptions label="Militarisierungsgrad"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW214" infoObjectType="CHA">
+
+<descriptions label="Zulassungstyp"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW238" infoObjectType="CHA">
+
+<descriptions label="Frei seit - Grund"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW243" infoObjectType="CHA">
+
+<descriptions label="Vermietklasse"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW340" infoObjectType="CHA">
+
+<descriptions label="Frei seit - Gesetzt am"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW349" infoObjectType="CHA">
+
+<descriptions label="Liefertermin"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW380" infoObjectType="CHA">
+
+<descriptions label="ZBII Eingang"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW381" infoObjectType="CHA">
+
+<descriptions label="WEK Datum"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW383" infoObjectType="CHA">
+
+<descriptions label="Lieferzeit in KW"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW409" infoObjectType="CHA">
+
+<descriptions label="Equipmentnumber"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW412" infoObjectType="CHA">
+
+<descriptions label="Objekt-Code"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW413" infoObjectType="CHA">
+
+<descriptions label="Einsatzbereitschaft"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW414" infoObjectType="CHA">
+
+<descriptions label="E-Gesamtobjekt"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW417" infoObjectType="CHA">
+
+<descriptions label="Rüstobjekttyp"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGEW427" infoObjectType="CHA">
+
+<descriptions label="Fahrzeugklasse BW"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGVC002" infoObjectType="CHA">
+
+<descriptions label="Fahrzeugmodell"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGVC008" infoObjectType="CHA">
+
+<descriptions label="Objektnummer"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGVC013" infoObjectType="CHA">
+
+<descriptions label="Erstzulassung"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGVC015" infoObjectType="CHA">
+
+<descriptions label="Kfz-Kennzeichen"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGVC016" infoObjectType="CHA">
+
+<descriptions label="amtliches Fahrzeugkennzeichen"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGVC017" infoObjectType="CHA">
+
+<descriptions label="Land"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGTH001" infoObjectType="CHA">
+
+<descriptions label="Fahrzeugklasse (J)"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGTH002" infoObjectType="CHA">
+
+<descriptions label="Art des Aufbaus"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGTH016" infoObjectType="CHA">
+
+<descriptions label="CO2-Wert"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGTH028" infoObjectType="CHA">
+
+<descriptions label="Sitzplätze (S.1)"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGTH034" infoObjectType="CHA">
+
+<descriptions label="Code zur Farbe (11)"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGTH035" infoObjectType="CHA">
+
+<descriptions label="EG-Typgenehmigung (K)"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGTH056" infoObjectType="CHA">
+
+<descriptions label="Marke"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGTH057" infoObjectType="CHA">
+
+<descriptions label="Emissionsklasse (14)"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="CFZG00__CFZGTH059" infoObjectType="CHA">
+
+<descriptions label="Hubraum"/>
+
+</navigationAttribute>
+
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="/sap/bw/modeling/iobj/cfzg00/a"/>
+
+<associationType>1</associationType>
+
+<associationValid>true</associationValid>
+
+<consumptionViewProperties sidConversionType="N" fieldName="/BIC/CFZG00" nonCumulative="true" odsOnly="false" metaObject="false" objectType="CHA"/>
+
+</element>
+
+
+-<element name="DISPO_ZEIT_V" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="TIMS" semanticType="empty" length="6"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Dispositionbeginn: Uhrzeit"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="DISPO_ZEIT_B" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="TIMS" semanticType="empty" length="6"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Dispositionsende: Uhrzeit"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="UEBERGABEUHR" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="TIMS" semanticType="empty" length="6"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Ausgabeuhrzeit"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="RUECKNAHMEUH" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="TIMS" semanticType="empty" length="6"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Rücknahmeuhrzeit"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="UEBERZUGSTAG" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="SUM">
+
+<inlineType name="DEC" semanticType="empty" precision="17"/>
+
+
+-<localProperties xsi:type="BwCore:LocalKeyfigureProperties">
+
+<descriptions label="Überzugstage"/>
+
+</localProperties>
+
+<semantics>NUM</semantics>
+
+</element>
+
+
+-<element name="ABRUFLEISTUN" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" associationLastChanged="2019-02-26T09:46:32Z" infoObjectName="RFS38M">
+
+<endUserTexts label="Abrufleistung"/>
+
+<inlineType name="NUMC" semanticType="empty" length="19" globalElementName="RFS38M"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Abrufleistung"/>
+
+</localProperties>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS01M" infoObjectType="CHA">
+
+<descriptions label="Abruf"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS39M" infoObjectType="CHA">
+
+<descriptions label="Abrufleistungsart"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS40M" infoObjectType="CHA">
+
+<descriptions label="Abrufleistungsstatus"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS03M" infoObjectType="CHA">
+
+<descriptions label="Abrufbeginn"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS04M" infoObjectType="CHA">
+
+<descriptions label="Abrufende"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS06M" infoObjectType="CHA">
+
+<descriptions label="Segment"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS08M" infoObjectType="CHA">
+
+<descriptions label="Leistende Org.-Einheit"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS10M" infoObjectType="CHA">
+
+<descriptions label="Externe Kundennummer (Nutzer)"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS12M" infoObjectType="CHA">
+
+<descriptions label="Externe Kd Nr (BBD)"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS14M" infoObjectType="CHA">
+
+<descriptions label="Abrufstatus"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS33M" infoObjectType="CHA">
+
+<descriptions label="Startpunkt"/>
+
+</navigationAttribute>
+
+
+-<navigationAttribute infoObjectName="RFS38M__RFS34M" infoObjectType="CHA">
+
+<descriptions label="Zielpunkt"/>
+
+</navigationAttribute>
+
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="/sap/bw/modeling/iobj/rfs38m/a"/>
+
+<associationType>1</associationType>
+
+<associationValid>true</associationValid>
+
+<consumptionViewProperties sidConversionType="N" fieldName="/BIC/RFS38M" nonCumulative="true" odsOnly="false" metaObject="false" objectType="CHA"/>
+
+</element>
+
+
+-<element name="UEBERGABE_Z1" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="SUM">
+
+<inlineType name="QUAN" semanticType="quantity" precision="17" scale="2"/>
+
+<unitCurrencyElement>#///U1/0UNIT</unitCurrencyElement>
+
+
+-<localProperties xsi:type="BwCore:LocalKeyfigureProperties">
+
+<descriptions label="Ausgabe: Zählerstand 1"/>
+
+</localProperties>
+
+<semantics>QUA</semantics>
+
+</element>
+
+
+-<element name="0UNIT" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" associationLastChanged="2019-01-11T11:04:58Z" conversionRoutine="BUNIT" infoObjectName="0UNIT">
+
+<endUserTexts label="Mengeneinheit"/>
+
+<inlineType name="UNIT" semanticType="unitOfMeasure" length="3" globalElementName="0UNIT"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="/sap/bw/modeling/iobj/0unit/a"/>
+
+<associationType>1</associationType>
+
+<associationValid>true</associationValid>
+
+<consumptionViewProperties sidConversionType="N" fieldName="UNIT" nonCumulative="true" odsOnly="false" metaObject="false" objectType="UNI"/>
+
+</element>
+
+
+-<element name="RUECKNAHME_Z" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="SUM">
+
+<inlineType name="QUAN" semanticType="quantity" precision="17" scale="2"/>
+
+<unitCurrencyElement>#///U1/0UNIT</unitCurrencyElement>
+
+
+-<localProperties xsi:type="BwCore:LocalKeyfigureProperties">
+
+<descriptions label="Rücknahme: Zählerstand 1"/>
+
+</localProperties>
+
+<semantics>QUA</semantics>
+
+</element>
+
+
+-<element name="UEBERGABE_Z2" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="SUM">
+
+<inlineType name="QUAN" semanticType="quantity" precision="17" scale="2"/>
+
+<unitCurrencyElement>#///U1/0UNIT</unitCurrencyElement>
+
+
+-<localProperties xsi:type="BwCore:LocalKeyfigureProperties">
+
+<descriptions label="Ausgabe: Zählerstand 2"/>
+
+</localProperties>
+
+<semantics>QUA</semantics>
+
+</element>
+
+
+-<element name="RUECKNAHME_0" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="SUM">
+
+<inlineType name="QUAN" semanticType="quantity" precision="17" scale="2"/>
+
+<unitCurrencyElement>#///U1/0UNIT</unitCurrencyElement>
+
+
+-<localProperties xsi:type="BwCore:LocalKeyfigureProperties">
+
+<descriptions label="Rücknahme: Zählerstand 2"/>
+
+</localProperties>
+
+<semantics>QUA</semantics>
+
+</element>
+
+
+-<element name="CHAUFFEURART" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="NUMC" semanticType="empty" length="3"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Chauffeurart"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="TANKKARTEN_N" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="NUMC" semanticType="empty" length="17"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Tankkate"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="ERSATZDISPOS" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="CHAR" semanticType="empty" length="1"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Flag: Ersazdisposition"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="LOESCHKENN" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="NUMC" semanticType="empty" length="1"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Löschkennzeichen"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<element name="VOR_BER_UHR" xsi:type="BwCore:BwElement" conversionType="I" dimension="#///__NON_KEY§" aggregationBehavior="NONE">
+
+<inlineType name="TIMS" semanticType="empty" length="6"/>
+
+
+-<localProperties xsi:type="BwCore:LocalCharacteristicProperties">
+
+<descriptions label="Vorzeitiger Berechnungsstopp Uhrzeit"/>
+
+<authorizationRelevant>N</authorizationRelevant>
+
+</localProperties>
+
+</element>
+
+
+-<input name="RFS13D" xsi:type="Composite:CompositeInput" hiddenTemporalFields="false" lastModified="2019-04-11T09:27:15Z" selectAll="false" alias="U1.ADSO.1">
+
+<entity>RFS13D.composite#//</entity>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-ABRUF_ID" targetName="ABRUF_ID"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-DISPO_ID" targetName="DISPO_ID"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-DISPO_OBJEKT_ID" targetName="DISPO_OBJEKT"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-ZAEHLER_V" targetName="ZAEHLER_V"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-DISPO_TYP" targetName="DISPO_TYP"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-REGIEFAHRT" targetName="REGIEFAHRT"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-DISPO_STATUS" targetName="DISPO_STATUS"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-RUECKNAHMETYP" targetName="RUECKNAHMETY"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-SERIE_ELEM_BEG" targetName="SERIE_ELEM_B"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-SERIE_ELEM_ENDE" targetName="SERIE_ELEM_E"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-MAT_ID" targetName="MAT_ID"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-CHAUFFEUR_ID" targetName="CHAUFFEUR_ID"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-AUSLEIHNUMMER" targetName="AUSLEIHNUMME"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-FREMDANM_ID" targetName="FREMDANM_ID"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-UEBERGABEZEIT" targetName="UEBERGABEZEI"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-RUECKNAHMEZEIT" targetName="RUECKNAHMEZE"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-NICHTABHOLUNG" targetName="NICHTABHOLUN"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-VORZ_BER_STOP" targetName="VORZ_BER_STO"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-DISPO_VON" targetName="DISPO_VON"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-DISPO_BIS" targetName="DISPO_BIS"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-STATUS_DATUM" targetName="STATUS_DATUM"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-DBNUMMER" targetName="DBNUMMER"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-DISPO_ZEIT_VON" targetName="DISPO_ZEIT_V"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-DISPO_ZEIT_BIS" targetName="DISPO_ZEIT_B"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-UEBERGABEUHR" targetName="UEBERGABEUHR"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-RUECKNAHMEUHR" targetName="RUECKNAHMEUH"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-UEBERZUGSTAGE" targetName="UEBERZUGSTAG"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-ABRUFLEISTUNG_ID" targetName="ABRUFLEISTUN"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-UEBERGABE_Z1" targetName="UEBERGABE_Z1"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="0UNIT" targetName="0UNIT"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-RUECKNAHME_Z1" targetName="RUECKNAHME_Z"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-UEBERGABE_Z2" targetName="UEBERGABE_Z2"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-RUECKNAHME_Z2" targetName="RUECKNAHME_0"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-CHAUFFEURART" targetName="CHAUFFEURART"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-TANKKARTEN_NR" targetName="TANKKARTEN_N"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-ERSATZDISPOSITION" targetName="ERSATZDISPOS"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-LOESCHKENN" targetName="LOESCHKENN"/>
+
+<mapping xsi:type="Type:ElementMapping" sourceName="4RFS13D-VOR_BER_UHR" targetName="VOR_BER_UHR"/>
+
+</input>
+
+</viewNode>
+
+
+-<tlogoProperties adtcore:name="VDSVDISP1" adtcore:type="HCPR" adtcore:description="Disposition (InfoObject)" adtcore:createdBy="DIMITROVAN" adtcore:changedBy="PFEIFERT" adtcore:createdAt="2019-02-25T14:24:45Z" adtcore:version="active" adtcore:changedAt="2019-03-14T13:48:01Z" adtcore:masterSystem="BWH" adtcore:masterLanguage="DE" adtcore:responsible="DIMITROVAN">
+
+<atom:link type="application/vnd.sap-bw-modeling.compositeprovider+xml" xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="/sap/bw/modeling/hcpr/vdsvdisp1/m"/>
+
+<atom:link title="Externer SAP HANA-View" type="application/atom+xml;type=entry" xmlns:atom="http://www.w3.org/2005/Atom" rel="http://www.sap.com/bw/modeling/relations:sapHANAView" href="system-local/bw/bw2hana/VDSVDISP1.calculationview#/"/>
+
+<adtcore:packageRef adtcore:name="$TMP" adtcore:type="DEVC/K" adtcore:uri="/sap/bc/adt/vit/wb/object_type/devck/object_name/%24TMP"/>
+
+<infoArea>VAL</infoArea>
+
+<objectVersion>A</objectVersion>
+
+<objectStatus>active</objectStatus>
+
+<contentState>ACT</contentState>
+
+</tlogoProperties>
+
+<runtimeProperties propertiesVersion="1"/>
+
+
+-<dimension name="__NON_KEY">
+
+<descriptions label="Nichtschlüsselfelder"/>
+
+</dimension>
+
+</Composite:compositeView>
